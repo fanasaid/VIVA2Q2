@@ -3,14 +3,17 @@ package viva2;
 import java.util.Scanner;
 public class V2Q2 {
     
+    // Method 1: to calculate area of a circle
     public static double calculateCircleArea(double radius){
         return Math.PI * radius * radius;        
     }
     
+    // Method 2: to calculate area of rectangle
     public static double calculateRectangleArea(double length, double width){
         return (length * width);
     }
     
+    // Method 3: to calculate area of triangle
     public static double calculateTriangleArea(double base, double height){
         return (base * height)/2;
     }
@@ -27,9 +30,11 @@ public class V2Q2 {
             System.out.print("Enter your choice: ");
             int choice = sc.nextInt();
             
+            // this will exit the program if user chooses 4
             if (choice == 4){
                 System.out.println("Exiting the program.");
                 break;
+            
             }
             
             switch (choice) {
